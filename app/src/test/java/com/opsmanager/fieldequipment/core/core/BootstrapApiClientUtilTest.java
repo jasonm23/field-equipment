@@ -21,7 +21,7 @@ public class BootstrapApiClientUtilTest {
     @Test
     @Ignore("Requires the API to use basic authentication. Parse.com api does not. See BootstrapService for more info.")
     public void shouldCreateClient() throws Exception {
-        List<User> users = new BootstrapService("demo@androidbootstrap.com", "foobar").getUsers();
+        List<User> users = new BootstrapService("demo@androidbootstrap.com", "android").getUsers();
 
         assertThat(users.get(0).getUsername(), notNullValue());
     }
